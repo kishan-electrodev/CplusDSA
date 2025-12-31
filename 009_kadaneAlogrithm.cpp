@@ -30,7 +30,7 @@ int main(){
     for(int i = 0; i < n; i++){
         currentSum += arr[i];
         maxSum = max(maxSum, currentSum);
-        if(currentSum < 0){
+        if(currentSum < 0){ // reset negative sum and also be here becuase when you got array like this {-1,-2,-3}. Always after the maxSum
             currentSum = 0;
         }
     }
